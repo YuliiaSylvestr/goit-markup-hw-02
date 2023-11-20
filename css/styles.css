@@ -1,16 +1,16 @@
 :root {
-    --primary-brand-color: #4D5AE5;
-    --pressed-state-color: #404BBF;
-    --dark-color: #2E2F42;
-    --success-color: #31D0AA;
+    --primary-brand-color: #4d5ae5;
+    --pressed-state-color: #404bbf;
+    --dark-color: #2e2f42;
+    --success-color: #31d0aa;
     --text-color: #434455;
-    --subtle-text-color: #8E8F99;
-    --accent-color: #E7E9FC;
-    --light-color: #F4F4FD;
+    --subtle-text-color: #8e8f99;
+    --accent-color: #e7e9fc;
+    --light-color: #f4f4fd;
     --modal-overlay-color: rgba(46, 47, 66, 0.4);
     --hero-background-color: rgba(46, 47, 66, 0.7);
-    --white-background-color: #FFFFFF;
-    --modal-background-color: #FCFCFC;
+    --white-background-color: #ffffff;
+    --modal-background-color: #fcfcfc;
 }
 
 body {
@@ -22,11 +22,16 @@ body {
     letter-spacing: 0.32px;
 }
 
-ul {
+.list {
     list-style: none;
 }
 
-a {
+.link:hover,
+.link:focus {
+    color: var(--pressed-state-color);
+}
+
+.link {
     text-decoration: none;
 }
 
@@ -35,24 +40,29 @@ a {
 }
 
 .logo {
-    color: var(--dark-color);
-    font-family: Raleway;
+    color: var(--primary-brand-color);
+    font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: 800;
-    line-height: 21px;
+    line-height: 1.17;
     letter-spacing: 0.54px;
     text-transform: uppercase;
 }
 
 .logo .web-logo {
-    color: var(--primary-brand-color);
+    color: var(--dark-color);
 }
 
 .nav-link {
     color: var(--dark-color);
     font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.32px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.contact-address {
+    font-style: normal
 }
 
 .address {
@@ -69,19 +79,23 @@ a {
     font-size: 56px;
     font-style: normal;
     font-weight: 700;
-    line-height: 60px;
-    letter-spacing: 1.12px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
 }
 
 .button-primary {
     color: var(--white-background-color);
-    border-radius: 4px;
     background: var(--primary-brand-color);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     cursor: pointer;
+    font-family: "Roboto", sans-serif;
 }
 
-.button-primary:hover {
+.button-primary:hover,
+.button-primary:focus {
     background: var(--pressed-state-color);
 }
 
@@ -90,8 +104,14 @@ a {
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.4px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.list-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .heading-two {
@@ -101,7 +121,7 @@ a {
     font-style: normal;
     font-weight: 700;
     line-height: 40px;
-    letter-spacing: 0.72px;
+    line-height: 1.11;
     text-transform: capitalize;
 }
 
@@ -110,9 +130,7 @@ a {
 }
 
 .gallery-items {
-    border-radius: 0px 0px 4px 4px;
     background: var(--white-background-color);
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .heading-team {
@@ -141,22 +159,23 @@ a {
 }
 
 .button-portfolio {
+    font-family: "Roboto", sans-serif;
     color: var(--primary-brand-color);
     text-align: center;
     font-style: normal;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.64px;
-    border-radius: 4px;
+    line-height: 1.6;
+    letter-spacing: 0.04em;
     border: 1px solid var(--accent-color);
-    background: var(--light-color);
+    background-color: var(--light-color);
     cursor: pointer;
 }
 
-.button-portfolio:hover {
+.button-portfolio:hover,
+.button-portfolio:focus {
     color: var(--white-background-color);
     background: var(--pressed-state-color);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .portfolio-cards {
