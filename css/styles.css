@@ -18,7 +18,7 @@ body {
     color: var(--text-color);
     font-size: 16px;
     background-color: var(--white-background-color);
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.32px;
 }
 
@@ -120,8 +120,8 @@ body {
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
-    line-height: 40px;
     line-height: 1.11;
+    letter-spacing: 0.02em;
     text-transform: capitalize;
 }
 
@@ -139,8 +139,8 @@ body {
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.4px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
 }
 
 .footer {
@@ -166,7 +166,7 @@ body {
     font-style: normal;
     font-size: 16px;
     font-weight: 500;
-    line-height: 1.6;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     border: 1px solid var(--accent-color);
     background-color: var(--light-color);
